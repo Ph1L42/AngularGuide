@@ -8,7 +8,13 @@
     <input type="text" [value]="aNumber">
 </div>
 
-<div [ngClass]="{'red-border': true}">
+<div [ngClass]="{'red-border': attachClass}">
     Text
 </div>
 <hr>
+<app-property-binding
+[name]="'Max'"></app-property-binding>
+<hr>
+<h4>Event Binding</h4>
+<button (click)="onClick($event)">Click Me</button>
+<app-event-binding (clicked)="aString = $event"></app-event-binding>

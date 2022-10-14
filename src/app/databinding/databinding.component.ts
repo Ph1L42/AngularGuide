@@ -16,4 +16,9 @@ export class DatabindingComponent{
       this.attachClass = true;
     }, 3000)
   }
+
+  onClick(event: Event){
+    alert("SIUUUUUU");
+    console.log(event);
+  }
 }
