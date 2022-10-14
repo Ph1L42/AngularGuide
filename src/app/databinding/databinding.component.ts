@@ -8,10 +8,12 @@ import { Component } from '@angular/core';
 export class DatabindingComponent{
   aString = "Ich bin ein String!";
   aNumber = 100;
+  attachClass = false;
 
   constructor(){
     setTimeout(() => {
       this.aNumber += 200;
+      this.attachClass = true;
     }, 3000)
   }
 }
