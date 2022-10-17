@@ -8,11 +8,11 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeDetailsComponent implements OnInit {
 
-  @Input() selectedRecipe;
+  @Input() selectedRecipe: Recipe;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }
