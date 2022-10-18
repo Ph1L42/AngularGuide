@@ -20,8 +20,13 @@ export class RecipeListComponent implements OnInit {
     new Recipe(
       'Schnitzel',
       'Das ist ein crispy cleanes Chicken Schnitzel',
-      'http://kmetro.restaurantden.com/wp-content/uploads/sites/67/2016/03/dish_1.jpg',
-      [new Ingredient('Hühnchen', 1), new Ingredient('Eier', 1), new Ingredient('Mehl', 100)]
+      'https://i.ytimg.com/vi/vYpWgclKXWg/maxresdefault.jpg',
+      [new Ingredient('Hühnchen', 1), 
+      new Ingredient('Eier', 1), 
+      new Ingredient('Mehl', 100), 
+      new Ingredient('Fresher Boi', 1),
+      new Ingredient('Notification Gang', 1)
+    ]
     ),
   ]; 
 
