@@ -1,10 +1,10 @@
 <header>
     <ul class="nav nav-pills">
-        <li role="presentation">
-          <a aria-current="page" href="#">Rezeptbuch</a>
+        <li role="presentation" routerLinkActive="active">
+          <a aria-current="page" [routerLink]="['/rezepte']">Rezeptbuch</a>
         </li>
-        <li role="presentation">
-          <a href="#">Einkaufsliste</a>
+        <li role="presentation" routerLinkActive="active">
+          <a [routerLink]="['/einkaufsliste']">Einkaufsliste</a>
         </li>
         <li>
           <div class="dropdown" appDropdown>
@@ -14,7 +14,7 @@
             aria-haspopup="true" 
             aria-expanded="false"
             class="btn btn-primary">
-              Dropdown trigger
+              Verwaltung
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dLabel">
